@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>  
+        <link rel="stylesheet" href="./style.css">
+        <script>
+           document.write("VIRTUOSPARK")
+
+           function printhello()
+           {
+            var name = document.getElementById("name").value;
+            console.log("Arrow function");
+           }
+
+           function addnumber()
+           {
+            let num1=document.getElementById("Firstnumber").value*1;
+            let num2=document.getElementById("Secondnumber").value*1;
+            let result=num1+num2;
+
+            let res=document.getElementById("res");
+            res.innerText=result;
+           }
+           function displayname()
+           {
+            let username1=document.getElementById("name1").value;
+            let res=document.getElementById("res")
+            res.innerText=username1
+           }
+           function convertuppercase()
+           {
+            let username1=document.getElementById("name1").value;
+            let res=document.getElementById("res")
+            res.innerText=username1.toUpperCase()
+           }
+           function concatstrings()
+           {
+            let username1=document.getElementById("name1").value;
+            let username2=document.getElementById("name2").value;
+            let res=document.getElementById("res")
+            res.innerText=username1.concat(username2)
+           }
+           function getlength()
+           {
+            let username1=document.getElementById("name1").value;
+            let res=document.getElementById("res")
+            res.innerText=username1.length
+           }
+           function changetocolor(color)
+           {
+            document.bgColor=color
+           }
+        </script>
+    </head>
+    <body>
+        <br>
+        <label for="name">Name</label>
+        <input type="text" id="name1" placeholder="Enter your name1">
+        <input type="text" id="name2" placeholder="Enter your name2">
+
+        <button onclick="displayname()">Display name</button>
+        <button onclick="convertuppercase()">Convert uppercase</button>
+        <button onclick="concatstrings()">Concat</button>
+        <button onclick="getlength()">get Length</button>
+        <br>
+        <br>
+        <input type="number" id="Firstnumber" placeholder="Enter first number">
+        <input type="number" id="Secondnumber" placeholder="Enter Second number">
+        <br>
+        <button onclick="addnumber()">add</button>
+        <h1 id="res"></h1>
+        <button onclick="changetocolor('black')">black</button>
+        <button onclick="changetocolor('red')">red</button>
+        <button onclick="changetocolor('white')">white</button>
+        <button onclick="changetocolor('pink')">pink</button>
+
+
+    </body>
+</html>
